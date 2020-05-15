@@ -1,0 +1,8 @@
+./.idea
+
+./eureka-naming-server/target
+./eureka-naming-server/.mvn
+
+./product-service/target
+./product-service/.mvn
+

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-naming-server/eureka-naming-server.iml" filepath="$PROJECT_DIR$/eureka-naming-server/eureka-naming-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/product-service/product-service.iml" filepath="$PROJECT_DIR$/product-service/product-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/root-project.iml" filepath="$PROJECT_DIR$/.idea/root-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-api-gateway/zuul-api-gateway.iml" filepath="$PROJECT_DIR$/zuul-api-gateway/zuul-api-gateway.iml" />
     </modules>
   </component>
 </project>

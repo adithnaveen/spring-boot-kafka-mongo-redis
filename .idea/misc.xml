@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/eureka-naming-server/pom.xml" />
         <option value="$PROJECT_DIR$/../../__home/__sprint-boot-gradle-projects/spring-boot-java-2.2.6-maven/customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/../../__home/__sprint-boot-gradle-projects/spring-boot-java-2.2.6-maven/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-api-gateway/pom.xml" />
       </list>
     </option>
   </component>

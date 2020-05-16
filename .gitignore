@@ -6,3 +6,7 @@
 ./product-service/target
 ./product-service/.mvn
 
+./zuul-api-gateway/.mvn
+./zuul-api-gateway/target
+
+

@@ -1,4 +1,21 @@
-# this file contins all the command for starting service. 
+# This file contins all the command for starting service. 
+
+
+Softwares links 
+---------------------
+
+https://kafka.apache.org/downloads 
+
+https://redis.io/download
+
+https://www.mongodb.com/download-center/community
+
+Tutorials 
+--------------------------------
+
+https://spring.io/guides
+
+
 
 Apache Kafka 
 -------------------------------------------------------------------------------------------------------------
@@ -32,10 +49,25 @@ Step 8: isr -> Insync Replicas 	(Get the description of the particular topic)
 
 
 
-redis 
+Redis 
 ------------------------------------------------------------------------------------------------
 
 
-mongodb 
+https://redis.io/download
 
+to start redis server 
+> ./src/redis-server
+
+to start redis 
+> ./src/redis-cli
+
+
+
+Mongodb 
 ------------------------------------------------------------------------------------------------
+to start mongod 
+> mongod --dbpath <path> --port <number>
+
+-- to open the client (in another terminal)
+> mongo 
+

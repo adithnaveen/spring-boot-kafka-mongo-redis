@@ -25,11 +25,11 @@ public class CustomizedResponseEntityException extends ResponseEntityExceptionHa
         return  new ResponseEntity<>(exceptionMessage, HttpStatus.NOT_FOUND);
     }
 
-@ExceptionHandler(Exception.class)
-    public final ResponseEntity<Object> handleAllException(final Exception exception, final WebRequest request){
-    ExceptionMessage exceptionMessage = new ExceptionMessage(new Date(), exception.getMessage(), request.getDescription(false));
+    @ExceptionHandler(Exception.class)
+        public final ResponseEntity<Object> handleAllException(final Exception exception, final WebRequest request){
+        ExceptionMessage exceptionMessage = new ExceptionMessage(new Date(), exception.getMessage(), request.getDescription(false));
 
-   return  new ResponseEntity(exceptionMessage, HttpStatus.INTERNAL_SERVER_ERROR);
+       return  new ResponseEntity(exceptionMessage, HttpStatus.INTERNAL_SERVER_ERROR);
 
-    }
+        }
 }

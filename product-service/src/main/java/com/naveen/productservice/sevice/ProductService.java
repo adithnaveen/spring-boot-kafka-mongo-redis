@@ -6,11 +6,13 @@ import com.naveen.productservice.model.Product;
 import com.naveen.productservice.repo.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 @Service
 public class ProductService implements IProductService{
 
@@ -21,6 +23,11 @@ public class ProductService implements IProductService{
     public Product insertProduct(Product product) {
         return productRepo.insert(product);
     }
+
+
+
+
+
 
     @Override
     public Product updateProduct(Product product) throws ProductNotFoundException {
@@ -33,8 +40,15 @@ public class ProductService implements IProductService{
         });
     }
 
+
+
+
+
+
+
+
     @Override
-    @Cacheable(value = "get-product") // , key = "#product") //, unless = "#result==null")
+    @Cacheable(value = "get-product") //  ,  key = "#product", unless = "#result==null")
     public Product getProduct(Integer productId) {
         System.out.println("in ProductService Requesting for -> " + productId);
 
@@ -43,6 +57,16 @@ public class ProductService implements IProductService{
         }
         return productRepo.findById(productId).get();
     }
+
+
+
+
+
+
+
+
+
+
 
     @Override
     @Cacheable(value = "products") // , key = "#products")

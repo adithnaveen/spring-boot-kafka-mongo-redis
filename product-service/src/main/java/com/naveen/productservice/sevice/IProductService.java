@@ -18,8 +18,7 @@ public interface IProductService {
 
     public void deleteProduct(Integer productId);
 
-    // Custom Question
+    // Custom Query 
     // to get only product names
-
     public List<String> getProductByNames();
 }

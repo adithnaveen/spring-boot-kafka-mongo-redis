@@ -18,7 +18,7 @@ public class ProductResource {
     private IProductService productService;
 
     @PostMapping("/product")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED) //201
     public Product insertProduct(@RequestBody Product product) {
         return productService.insertProduct(product);
     }
@@ -45,6 +45,12 @@ public class ProductResource {
         return this.productService.getAllProducts();
     }
 
+    @DeleteMapping("/product/{productId}")
+    public ResponseEntity<Void> deleteProduct(@RequestParam Integer productId){
+        this.productService.deleteProduct(productId);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @PutMapping(value = "/product", produces = "application/json" )
     public Product  updateProduct(@RequestBody Product product) throws ProductNotFoundException {
         try {
@@ -53,12 +59,6 @@ public class ProductResource {
             pnfe.printStackTrace();
             throw new ProductNotFoundException("Sorry Product Not Found : " + product.toString());
         }
-    }
-
-    @DeleteMapping("/product/{productId}")
-    public ResponseEntity<Void> deleteProduct(@RequestParam Integer productId){
-        this.productService.deleteProduct(productId);
-        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 

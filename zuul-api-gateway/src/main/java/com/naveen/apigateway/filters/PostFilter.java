@@ -29,6 +29,7 @@ public class PostFilter extends ZuulFilter {
 		return 1;
 	}
 
+	// pre or post
 	@Override
 	public String filterType() {
 		return "post";

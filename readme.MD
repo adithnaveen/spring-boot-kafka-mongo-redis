@@ -71,3 +71,62 @@ to start mongod
 -- to open the client (in another terminal)
 > mongo 
 
+Class Notes 
+---------------------------------
+
+SpringBoot 
+MicroService - SpringBoot 
+NoSQL DB - ~ MongoDB
+Messaging - ~ Kafka 
+Cahcing - ~ Redis 
+
+
+AppServer - private
+DBServer - private 
+API Gateway - public 
+
+950 - 1100 / per sec (DBMS - mysql, oracle, DB2) - ACID 
+~10000 / per sec (NoSQL - mongodb, cassandra etc) - no ACID 
+Cache - Redis/Memcache - (key/value paid) - NO ACID 
+
+
+---------------------------------------------
+server.port=8761
+spring.application.name=eureka-naming-server
+----------------------------------------------
+2181 - zookeepr 
+9092 - kafka 
+27107 - MongoDB 
+6379 - redis 
+8761 - server.port [Eureka]
+9090 - product service 
+8765 - zuul [API Gateway]
+
+
+
+redis has src folder dont look for ./bin 
+
+Kafka - rabbit mq, open mq, mq series, tibco 
+
+
+windows : c:\data 
+unis /data 
+
+http://localhost:9090/products  - product-service 
+http://localhost:9190 - employee-service 
+http://localhost:9290 - login-service 
+
+
+http://localhost:8765/product-service/api/products 
+http://localhost:8765/employee-service/api/employees
+http://localhost:8765/login-service/api/validate 
+
+
+
+
+
+
+
+ 
+
+
